@@ -49,6 +49,14 @@ public class LambdaExercise1 {
 				return t.getName().startsWith(obj.toString());
 			}
 		});
+		
+		IHeyLambda heyLambda = new IHeyLambda() {
+			
+			@Override
+			public void sayHelloAndSum(int a, int b) {
+				System.out.println("Hello world Lambda, sum+"+(a+b));
+			}
+		};
 
 	}
 

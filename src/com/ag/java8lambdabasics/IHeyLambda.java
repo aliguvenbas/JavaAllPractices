@@ -7,5 +7,5 @@ package com.ag.java8lambdabasics;
 
 @FunctionalInterface
 public interface IHeyLambda {
-	void foo();
+	void sayHelloAndSum(int a, int b);
 }
