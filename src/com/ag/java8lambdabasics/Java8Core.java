@@ -13,19 +13,19 @@ public class Java8Core {
 		//interface implementation ****
 		
 		//we dont need to create an implementation class
-		IHeyLambda ret = () -> System.out.println("Hello world Lambda");
-		ret.foo();
-		
-		IHeyLambda ret2 = new HeyLambdaImpl();
-		ret2.foo();
-		
-		IHeyLambda ret3 = new IHeyLambda() {//inner implementation, gets more line
-			
-			@Override
-			public void foo() {
-				System.out.println("Hello world inner implementation");
-			}
-		};
+//		IHeyLambda ret = () -> System.out.println("Hello world Lambda");
+//		ret.foo();
+//		
+//		IHeyLambda ret2 = new HeyLambdaImpl();
+//		ret2.foo();
+//		
+//		IHeyLambda ret3 = new IHeyLambda() {//inner implementation, gets more line
+//			
+//			@Override
+//			public void foo() {
+//				System.out.println("Hello world inner implementation");
+//			}
+//		};
 		//****
 		
 	}
