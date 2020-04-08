@@ -1,0 +1,3 @@
+- Make good use of Java's access modifiers, private methods can not seen at java reflection
+- always define the smallest possible API and interface surfaces
+- do not use serialization
