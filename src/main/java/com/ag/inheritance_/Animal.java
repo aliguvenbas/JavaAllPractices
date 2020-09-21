@@ -1,5 +1,6 @@
 package com.ag.inheritance_;
 
+import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
