@@ -1,8 +1,8 @@
 package com.ag.optional_;
 
+import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Matchers.any;
@@ -11,7 +11,7 @@ import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
 import java.util.Optional;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
 
@@ -68,21 +68,56 @@ public class OptionalKeyword {
 		assertEquals("aliveli", name);
 	}
 
+	//Using map() with optional keyword
 	@Test
 	public void shouldMapNotCallIfValueIsNull() {
 		StringAppender stringAppender = spy(new StringAppender());
 		String name = null;
-		Optional<String> nameOpt =  Optional.ofNullable(name).map(stringAppender::getAppended);
+		Optional<String> nameOpt = Optional.ofNullable(name).map(stringAppender::getAppended);
 
 		assertFalse(nameOpt.isPresent());
 
 		verify(stringAppender, never()).getAppended(any());
 	}
 
+	@Test
+	public void shouldCallOrElseGetIfValueIsNull() {
+		StringAppender stringAppender = spy(new StringAppender());
+		String name = null;
+		String result = Optional.ofNullable(name)
+				.map(stringAppender::getAppended)
+				.orElseGet(() -> {
+					System.out.println("OrElseGet");
+					System.out.println("called");
+					return "--";
+				});
+
+		assertEquals("--", result);
+
+		verify(stringAppender, never()).getAppended(any());
+	}
+
+	@Test(expected = IllegalStateException.class)
+	public void shouldCallOrElseThrowIfValueIsNull() {
+		StringAppender stringAppender = spy(new StringAppender());
+		String name = null;
+		String result = Optional.ofNullable(name)
+				.map(stringAppender::getAppended)
+				.orElseThrow(() -> {
+					System.out.println("OrElseGet");
+					System.out.println("called");
+					return new IllegalStateException("exception thrown");
+				});
+
+		fail();
+
+		verify(stringAppender, never()).getAppended(any());
+	}
+
 }
 
-class StringAppender{
-	String getAppended(String text){
+class StringAppender {
+	String getAppended(String text) {
 		return text + "!!! ";
 	}
 }
