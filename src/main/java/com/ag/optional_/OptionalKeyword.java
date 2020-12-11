@@ -18,6 +18,21 @@ import org.mockito.runners.MockitoJUnitRunner;
 @RunWith(MockitoJUnitRunner.class)
 public class OptionalKeyword {
 
+//	### Prefer value-based alternatives to generic ones
+//	There are special non-generic Optional classes. OptionalInt, OptionalLong, and OptionalDouble.
+
+//	## Don’t make Optional from collections. use emptyList() insteadOf Optional<List<Student>>
+//	Any collections is a container itself which emptiness can be determined without additional classes. Empty list — a better approach
+
+//	##Don’t pass Optional as a parameter
+//			public void doAction() {
+//				OptionalInt age = getAge();
+//				Optional<Role> role = getRole();
+//				applySettings(name, age, role);
+//			}
+//	we have no idea how does the method interprets an Optional. Does it just replace the absent value with the default one or does it completely
+// 	change the business logic? Or maybe it just throws NoSuchElementException.
+
 
 	@Test
 	public void shouldBeFalseWhenEmptyOptional() {
@@ -47,11 +62,12 @@ public class OptionalKeyword {
 
 	@Test
 	public void shouldReplaceString() {
-		Optional.ofNullable("aliveli").ifPresent(name -> {
-					name = name.replaceAll("l", "");
-					assertEquals("aivei", name);
-				}
-		);
+		Optional.ofNullable("aliveli")
+				.ifPresent(name -> {
+							name = name.replaceAll("l", "");
+							assertEquals("aivei", name);
+						}
+				);
 	}
 
 	@Test
@@ -68,7 +84,7 @@ public class OptionalKeyword {
 		assertEquals("aliveli", name);
 	}
 
-	//Using map() with optional keyword
+	//Using map() with optional keyword -----------------------------------------
 	@Test
 	public void shouldMapNotCallIfValueIsNull() {
 		StringAppender stringAppender = spy(new StringAppender());
@@ -113,6 +129,28 @@ public class OptionalKeyword {
 
 		verify(stringAppender, never()).getAppended(any());
 	}
+	//----------------------------------------------------------------------------------
+
+	// orElse VS  orElseGet -----------------------------------------
+	@Test
+	public void shouldCallOrElseMethodEveryTimeEvenIfObjectNotNull() {
+		String text = "ted mosby";
+		String who = Optional.ofNullable(text)
+				.orElse(getHisBestMan());
+	}
+
+	@Test
+	public void shouldNotCallOrElseMethodEveryTimeIfObjectNotNull() {
+		String text = "ted mosby";
+		String who = Optional.ofNullable(text)
+				.orElseGet(() -> getHisBestMan());
+	}
+
+	private String getHisBestMan() {
+		System.out.println("call best man");
+		return "Marshall Eriksen";
+	}
+	//----------------------------------------------------------------------------------
 
 }
 
