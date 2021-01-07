@@ -9,10 +9,36 @@ public class Core {
 	public static void main(String[] args) {
 		existingClass();
 		compiledClass();
+		getPrivateMethods();
+
 		SampleCls sampleCls = new SampleCls();
 		try {
 			System.out.println(sampleCls.getMap());
 		} catch(IllegalAccessException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static void getPrivateMethods() {
+		SampleCls sampleCls = new SampleCls();
+
+		Class<? extends SampleCls> aClass = sampleCls.getClass();
+
+		try {
+			Field name = aClass.getDeclaredField("name");
+			name.setAccessible(true);
+
+			System.out.println("a private field name is "+name.getName());
+		} catch(NoSuchFieldException e) {
+			e.printStackTrace();
+		}
+
+		try {
+			Method getAge = aClass.getDeclaredMethod("getAge");
+			getAge.setAccessible(true);
+
+			System.out.println("a private method name is "+getAge.getName());
+		} catch(NoSuchMethodException e) {
 			e.printStackTrace();
 		}
 	}
