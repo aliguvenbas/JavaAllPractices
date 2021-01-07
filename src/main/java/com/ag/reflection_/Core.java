@@ -9,6 +9,12 @@ public class Core {
 	public static void main(String[] args) {
 		existingClass();
 		compiledClass();
+		SampleCls sampleCls = new SampleCls();
+		try {
+			System.out.println(sampleCls.getMap());
+		} catch(IllegalAccessException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private static void compiledClass() {
