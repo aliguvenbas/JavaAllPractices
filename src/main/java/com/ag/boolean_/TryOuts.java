@@ -17,7 +17,7 @@ public class TryOuts {
 	}
 
 	@Test
-	public void shouldReturnThrowExceptionIfBoxedBooleanNull() {
+	public void shouldReturnThrowExceptionIfBoxedBooleanNullAndEvaluated() {
 		Boolean b = null;
 
 		assertThrows(NullPointerException.class, () -> {
@@ -25,6 +25,13 @@ public class TryOuts {
 
 			}
 		});
-
 	}
+
+	@Test
+	public void shouldReturnFalseIfBoxedBooleanNull() {
+		Boolean b = null;
+
+		assertFalse(Boolean.valueOf(b));
+	}
+
 }

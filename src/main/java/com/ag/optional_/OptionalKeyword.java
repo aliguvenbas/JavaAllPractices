@@ -1,5 +1,6 @@
 package com.ag.optional_;
 
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -10,7 +11,12 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Optional;
+import java.util.Set;
+import java.util.stream.Collectors;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
@@ -151,6 +157,17 @@ public class OptionalKeyword {
 		return "Marshall Eriksen";
 	}
 	//----------------------------------------------------------------------------------
+
+	@Test
+	public void test(){
+		Set<String> memberEmails = new HashSet<>();
+
+		List<String> collect = memberEmails.stream().map(email -> email + "!!")
+				.collect(Collectors.toList());
+
+		assertNotNull(collect);
+		assertTrue(collect.isEmpty());
+	}
 
 }
 
