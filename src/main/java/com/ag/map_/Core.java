@@ -4,13 +4,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.core.convert.TypeDescriptor;
 
 public class Core {
 
@@ -21,9 +22,9 @@ public class Core {
 	public void setup() {
 		stream = Stream.of("Ankara", "Adana", "Izmir", "Canakkale", "Corum", "Tekirdag");
 		map = new HashMap<>();
-		map.put("a","ankara");
-		map.put("i","izmir");
-		map.put("c","canakkale");
+		map.put("a", "ankara");
+		map.put("i", "izmir");
+		map.put("c", "canakkale");
 	}
 
 	@Test
@@ -32,6 +33,16 @@ public class Core {
 				city -> city.toCharArray()[0],
 				city -> city
 		)));
+	}
+
+	@Test
+	public void shouldNotMapValuesWithSameKey() {
+		List<Item> items = Arrays.asList(new Item("1", "item-1"),
+				new Item("1", "item-1"),
+				new Item("2", "item-2"),
+				new Item("3", "item-3"));
+
+		assertThrows(IllegalStateException.class, ()->items.stream().collect(Collectors.toMap(Item::getId, item -> item)));
 	}
 
 	@Test
@@ -49,7 +60,7 @@ public class Core {
 	}
 
 	@Test
-	public void whatReturnWithEmptyMap(){
+	public void whatReturnWithEmptyMap() {
 		map = new HashMap<>();
 
 		boolean b = map.entrySet().stream()
@@ -57,5 +68,20 @@ public class Core {
 				.anyMatch(entry -> entry.getValue().contains("kara"));
 
 		assertFalse(b);
+	}
+}
+
+class Item {
+	String id;
+	String name;
+
+	public Item(String id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+
+	public String getId() {
+		return id;
 	}
 }

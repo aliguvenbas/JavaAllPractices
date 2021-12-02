@@ -1,0 +1,844 @@
+{
+  "id": "3c114c90-99ca-484e-887a-2eed381fa542",
+  "name": "Scoodle play test domain",
+  "institutions": [
+    {
+      "id": "be9474c5-be59-425f-a2e6-cdb6af4314b9",
+      "name": "Scoodle Play test school 1",
+      "number": "803415",
+      "classes": [
+        {
+          "id": "2e0718c2-790a-44b1-b8d0-1995d0a23162",
+          "name": "1A (Scoodle Play school 1)",
+          "teachers": [
+            {
+              "id": "11143c3d-5503-4a12-ae90-a33900795902",
+              "firstName": "Lien",
+              "lastName": "Van Looy"
+            },
+            {
+              "id": "2b8dfc3e-13ec-42fc-8f34-a80800a0c2d2",
+              "firstName": "Plantyn",
+              "lastName": "Lager"
+            },
+            {
+              "id": "1565b6f0-51e9-4176-8e56-abb400bc5924",
+              "firstName": "Scoodle",
+              "lastName": "Teacher1"
+            },
+            {
+              "id": "1d32f074-49d3-4a1c-97f5-aaa200bee6d4",
+              "firstName": "Andy",
+              "lastName": "W"
+            },
+            {
+              "id": "609c99d1-e03e-4d1d-b37b-ac6300b0934b",
+              "firstName": "Isabella",
+              "lastName": "O'Reilly"
+            },
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            }
+          ],
+          "students": [
+            {
+              "id": "56ed4d22-88ca-4680-8bd7-a95a00b58e58",
+              "firstName": "Senne",
+              "lastName": "Liekens"
+            }
+          ]
+        },
+        {
+          "id": "7b0e05af-62ab-496e-99ae-27f97bafc33e",
+          "name": "4B",
+          "teachers": [
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            }
+          ],
+          "students": [
+            {
+              "id": "c37f0d0f-e484-4143-a683-aa5000d75f71",
+              "firstName": "Maxim (lln)",
+              "lastName": "Crabbe"
+            },
+            {
+              "id": "a1d953e3-e117-41c7-9fdd-aa5000d7afd1",
+              "firstName": "Andy (lln)",
+              "lastName": "Warrens"
+            },
+            {
+              "id": "365857db-26ba-4734-93a7-aa5000d7c865",
+              "firstName": "Lukas (lln)",
+              "lastName": "Craxit"
+            }
+          ]
+        },
+        {
+          "id": "7a3c42cb-6d65-432f-86e9-595564ce8c7e",
+          "name": "6A",
+          "teachers": [
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            }
+          ],
+          "students": [
+            {
+              "id": "55c9b7f2-0213-4ec0-9cb8-aa8c00bac673",
+              "firstName": "Leni",
+              "lastName": "Verhoeven"
+            }
+          ]
+        },
+        {
+          "id": "35369cde-5ce9-4eb9-9743-807cbf8e3734",
+          "name": "1B",
+          "teachers": [
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            },
+            {
+              "id": "11143c3d-5503-4a12-ae90-a33900795902",
+              "firstName": "Lien",
+              "lastName": "Van Looy"
+            }
+          ],
+          "students": [
+            {
+              "id": "2a64abc6-2e37-4f59-a9ba-acc400d90a7a",
+              "firstName": "Jane",
+              "lastName": "Smith loadtest"
+            },
+            {
+              "id": "d29fd897-4420-441c-b876-acc400d9e83a",
+              "firstName": "Test2",
+              "lastName": "Test2"
+            },
+            {
+              "id": "30f734ad-674a-4144-b52e-acc400d9ff2c",
+              "firstName": "Test3",
+              "lastName": "Test3"
+            },
+            {
+              "id": "881bd53b-1d58-421e-8e8f-acc400da149b",
+              "firstName": "Test4",
+              "lastName": "Test4"
+            },
+            {
+              "id": "ddac5946-d0bf-4914-ba7e-acc400da2a12",
+              "firstName": "Test5",
+              "lastName": "Test5"
+            },
+            {
+              "id": "b90d494c-e4d8-45ea-bb4d-acc400da3ffa",
+              "firstName": "Test6",
+              "lastName": "Test6"
+            },
+            {
+              "id": "16383364-3323-4232-b667-acc400da81d2",
+              "firstName": "Test7",
+              "lastName": "Test7"
+            },
+            {
+              "id": "be6d9ed7-cfd2-41f3-b1d3-acc400da97ff",
+              "firstName": "Test8",
+              "lastName": "Test8"
+            },
+            {
+              "id": "da84618f-117d-4659-8771-acc400daade0",
+              "firstName": "Test9",
+              "lastName": "Test9"
+            },
+            {
+              "id": "557c00a2-ed51-4b96-9ee3-acc400dac6f5",
+              "firstName": "Test10",
+              "lastName": "Test10"
+            }
+          ]
+        },
+        {
+          "id": "c1c59426-006a-4ac8-8dc0-812a73794e58",
+          "name": "2A",
+          "teachers": [
+            {
+              "id": "11143c3d-5503-4a12-ae90-a33900795902",
+              "firstName": "Lien",
+              "lastName": "Van Looy"
+            },
+            {
+              "id": "70fd3ac8-dd8a-416b-9bc8-aba500fac9b7",
+              "firstName": "Tom",
+              "lastName": "Tsagkatos"
+            },
+            {
+              "id": "609c99d1-e03e-4d1d-b37b-ac6300b0934b",
+              "firstName": "Isabella",
+              "lastName": "O'Reilly"
+            },
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            },
+            {
+              "id": "a1d95d6a-196b-4cc2-9a06-abc000f13bbb",
+              "firstName": "Lori",
+              "lastName": "Woods"
+            }
+          ],
+          "students": [
+            {
+              "id": "cedcdeca-c999-43d9-b71d-a93c00a3aebd",
+              "firstName": "Jade",
+              "lastName": "De Prins"
+            },
+            {
+              "id": "21368aaa-e048-449b-a32c-a9a00094f3f8",
+              "firstName": "Emin",
+              "lastName": "Hadżiahmetović"
+            },
+            {
+              "id": "9ff6a3cf-c436-4a18-b612-4e6d1dc679e2",
+              "firstName": "Steven",
+              "lastName": "De Kock"
+            },
+            {
+              "id": "0b0683a6-9a91-4cfc-9b66-d04ee77f905f",
+              "firstName": "Deepa",
+              "lastName": "Kalyanji"
+            },
+            {
+              "id": "f1c64620-6bc3-4041-bbc7-71f9834f9fad",
+              "firstName": "Nick",
+              "lastName": "Peelman"
+            },
+            {
+              "id": "d5896e71-5a18-4bfe-bb7c-0f68610e77a4",
+              "firstName": "Nóra",
+              "lastName": "Pekker"
+            },
+            {
+              "id": "57f9ab0c-e690-429f-b3ce-a95a00b75a53",
+              "firstName": "Louise",
+              "lastName": "Fransen"
+            }
+          ]
+        },
+        {
+          "id": "6bd2ad03-7ed6-4c3d-ac9c-8723ae895930",
+          "name": "5B",
+          "teachers": [
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            }
+          ],
+          "students": [
+            {
+              "id": "29f5c46a-5800-4767-812b-aa6a00f20302",
+              "firstName": "Geert ",
+              "lastName": "Verstraete"
+            }
+          ]
+        },
+        {
+          "id": "70899e39-159d-41ce-abcc-a0407cff2e60",
+          "name": "3B",
+          "teachers": [
+            {
+              "id": "1d32f074-49d3-4a1c-97f5-aaa200bee6d4",
+              "firstName": "Andy",
+              "lastName": "W"
+            },
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            }
+          ],
+          "students": [
+            {
+              "id": "6dc10be8-e47f-49ac-b3c5-a97b00e39a21",
+              "firstName": "Adam",
+              "lastName": "Michiels"
+            }
+          ]
+        },
+        {
+          "id": "c7ebf030-811f-4599-8c2f-acaf00edf2ef",
+          "name": "T1",
+          "teachers": [
+            {
+              "id": "02d897c4-2254-4d8e-a66c-ab1f00fbeaad",
+              "firstName": "Danubius",
+              "lastName": "Test 1"
+            }
+          ],
+          "students": [
+            {
+              "id": "e9f330bc-4e34-4f7a-bf30-acaf00ee3ee9",
+              "firstName": "AutoTest",
+              "lastName": "AutoTest"
+            }
+          ]
+        },
+        {
+          "id": "edc1d472-cd6b-4303-9de6-b1d3d1260459",
+          "name": "2B",
+          "teachers": [
+            {
+              "id": "3c7f6277-da14-4196-a611-abf800753491",
+              "firstName": "Richard",
+              "lastName": "Nagy"
+            },
+            {
+              "id": "1565b6f0-51e9-4176-8e56-abb400bc5924",
+              "firstName": "Scoodle",
+              "lastName": "Teacher1"
+            },
+            {
+              "id": "120f55bd-b527-4bec-af4c-ab95009e9fbd",
+              "firstName": "Dewi",
+              "lastName": "Williams"
+            },
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            }
+          ],
+          "students": [
+            {
+              "id": "4f3b5e7f-27d6-480c-ab08-a97b00e39bc9",
+              "firstName": "Victor",
+              "lastName": "Goossens"
+            },
+            {
+              "id": "987d2d82-2840-4ae8-a3ef-a97b00e397e0",
+              "firstName": "Liam",
+              "lastName": "De Smet"
+            },
+            {
+              "id": "0d035698-04e9-4ab1-a75b-a97b00e39aa6",
+              "firstName": "Finn",
+              "lastName": "Geerts"
+            },
+            {
+              "id": "4e0915a5-1853-409f-a5a9-a97b00e39ad5",
+              "firstName": "Sofia",
+              "lastName": "Mertens"
+            },
+            {
+              "id": "6cb88e79-a423-42de-b542-a97b00e39bf3",
+              "firstName": "Noor",
+              "lastName": "Jacobs"
+            },
+            {
+              "id": "d7838246-7977-41b6-98da-a97b00e399f2",
+              "firstName": "Olivia",
+              "lastName": "Janssens"
+            },
+            {
+              "id": "65730078-f93b-4aff-98c0-a97b00e396de",
+              "firstName": "Louis",
+              "lastName": "Lauwers"
+            },
+            {
+              "id": "f4a90247-1ce3-4956-bc7f-a97b00e3980a",
+              "firstName": "Amélie",
+              "lastName": "Michiels"
+            },
+            {
+              "id": "9a550a75-267c-4120-8acf-a97b00e37c43",
+              "firstName": "Elise",
+              "lastName": "Daniëls"
+            },
+            {
+              "id": "021719c4-6518-4307-98af-a97b00e3972e",
+              "firstName": "Mathis",
+              "lastName": "Van Genechten"
+            },
+            {
+              "id": "547ab79d-c385-4585-8691-a97b00e399c8",
+              "firstName": "Lewis",
+              "lastName": "Guldentops"
+            },
+            {
+              "id": "a0eeffd3-2738-4e6e-8b86-a97b00e39c22",
+              "firstName": "Emma",
+              "lastName": "Peeters"
+            },
+            {
+              "id": "949eb8cd-3c57-4183-a60b-a97b00e37ca1",
+              "firstName": "Mohamed",
+              "lastName": "De Wachter"
+            },
+            {
+              "id": "92828817-2ea2-4971-a83d-a97b00e39a75",
+              "firstName": "Elena",
+              "lastName": "Dooms"
+            },
+            {
+              "id": "ef1cba6f-0255-4340-a016-a97b00e37c14",
+              "firstName": "Yasmine",
+              "lastName": "Claes"
+            },
+            {
+              "id": "4803ec39-ec2d-43ad-9029-a97b00e3985f",
+              "firstName": "Mila",
+              "lastName": "Verhoest"
+            },
+            {
+              "id": "d72ae7a3-f28d-4f44-bb73-a97b00e39704",
+              "firstName": "Alice",
+              "lastName": "Maes"
+            },
+            {
+              "id": "17d97e9a-4100-4eff-af9f-a97b00e39a4b",
+              "firstName": "Arthur",
+              "lastName": "Van Looy"
+            },
+            {
+              "id": "3949cc19-848d-47bf-8cfd-a97b00e37c72",
+              "firstName": "Malak",
+              "lastName": "Wouters"
+            },
+            {
+              "id": "2aac1c6e-9497-45dc-a849-a97b00e39aff",
+              "firstName": "Leon",
+              "lastName": "Vandamme"
+            },
+            {
+              "id": "71bb1012-e31a-4636-8f84-a97b00e39928",
+              "firstName": "Lucas",
+              "lastName": "Uytterhoeven"
+            },
+            {
+              "id": "19da03a4-0298-432e-a872-a97b00e398fe",
+              "firstName": "Lowie",
+              "lastName": "Lauwaerts"
+            },
+            {
+              "id": "bcae3d60-9d13-41b2-8c68-a97b00e39c50",
+              "firstName": "Louise",
+              "lastName": "Van Eynde"
+            },
+            {
+              "id": "c518018f-4a4a-4a45-9634-a97b00e398cf",
+              "firstName": "Lina",
+              "lastName": "Goossens"
+            },
+            {
+              "id": "933a4820-eb3f-4e9b-9ef1-a97b00e37be5",
+              "firstName": "Gabriel",
+              "lastName": "De Kock"
+            },
+            {
+              "id": "1b19362e-49e2-4c22-aedd-a97b00e39835",
+              "firstName": "Lars",
+              "lastName": "Van Looy"
+            },
+            {
+              "id": "ed98aef5-8265-4365-a95b-a97b00e39953",
+              "firstName": "Lucie",
+              "lastName": "Willems"
+            },
+            {
+              "id": "ea8eb8af-914f-48b6-adff-a97b00e39758",
+              "firstName": "Marie",
+              "lastName": "Vermeersch"
+            },
+            {
+              "id": "2a91d02b-0bcc-4815-8fb4-acaf00f0333a",
+              "firstName": "Test",
+              "lastName": "Elek"
+            }
+          ]
+        },
+        {
+          "id": "9f4c753a-deb6-459f-8713-c69bd26fc1ef",
+          "name": "4A",
+          "teachers": [
+            {
+              "id": "11143c3d-5503-4a12-ae90-a33900795902",
+              "firstName": "Lien",
+              "lastName": "Van Looy"
+            },
+            {
+              "id": "2b8dfc3e-13ec-42fc-8f34-a80800a0c2d2",
+              "firstName": "Plantyn",
+              "lastName": "Lager"
+            },
+            {
+              "id": "70fd3ac8-dd8a-416b-9bc8-aba500fac9b7",
+              "firstName": "Tom",
+              "lastName": "Tsagkatos"
+            },
+            {
+              "id": "3c7f6277-da14-4196-a611-abf800753491",
+              "firstName": "Richard",
+              "lastName": "Nagy"
+            },
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            }
+          ],
+          "students": [
+            {
+              "id": "c76ed91d-67b3-4bde-bd23-aa5400e3f7d2",
+              "firstName": "Maxim",
+              "lastName": "Crabbé"
+            },
+            {
+              "id": "dadf61c7-57eb-4b1d-b99d-aa5400e3c77f",
+              "firstName": "Test",
+              "lastName": "Fers"
+            },
+            {
+              "id": "69e44cdd-e471-4f8e-8c12-a9a0010ee49b",
+              "firstName": "Nieke",
+              "lastName": "De Borgher"
+            },
+            {
+              "id": "35ce906c-d1fe-4fee-ab14-a9a0010ed2ef",
+              "firstName": "Loe",
+              "lastName": "Dooms"
+            },
+            {
+              "id": "d802a568-9fba-46ae-91da-aa5400e3def0",
+              "firstName": "Koen",
+              "lastName": "De Bakker"
+            }
+          ]
+        },
+        {
+          "id": "37cabffc-b8ba-4e2e-978f-e1dce7149ac0",
+          "name": "5A",
+          "teachers": [
+            {
+              "id": "3c7f6277-da14-4196-a611-abf800753491",
+              "firstName": "Richard",
+              "lastName": "Nagy"
+            },
+            {
+              "id": "11143c3d-5503-4a12-ae90-a33900795902",
+              "firstName": "Lien",
+              "lastName": "Van Looy"
+            },
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            }
+          ],
+          "students": [
+            {
+              "id": "608c8a3d-d7fd-47e7-83fe-a95b00dd7e20",
+              "firstName": "Georges",
+              "lastName": "Van Hoof"
+            },
+            {
+              "id": "33d49f9e-e929-43ae-b3ed-a95b00dc75cd",
+              "firstName": "Lieze",
+              "lastName": "Dooms"
+            }
+          ]
+        },
+        {
+          "id": "480b451f-130e-42e0-bf03-ff28e57dad17",
+          "name": "3A",
+          "teachers": [
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            },
+            {
+              "id": "ec1d458d-ee8f-4e51-80f1-a2d600deb0c9",
+              "firstName": "Carl ✈",
+              "lastName": "Verhoest"
+            },
+            {
+              "id": "11143c3d-5503-4a12-ae90-a33900795902",
+              "firstName": "Lien",
+              "lastName": "Van Looy"
+            }
+          ],
+          "students": [
+            {
+              "id": "8a55406d-bd92-4588-8afe-a93b00d1d423",
+              "firstName": "Lieze",
+              "lastName": "Dooms"
+            },
+            {
+              "id": "08965b41-fefe-4164-b1bb-121a842024f3",
+              "firstName": "Dewi",
+              "lastName": "Williams"
+            },
+            {
+              "id": "6f9d476c-ebf8-4ebb-ad02-a93500909fe7",
+              "firstName": "Lien",
+              "lastName": "Van Looy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06f4ce8a-8274-42d4-a51e-b834c2af5cff",
+      "name": "Scoodle Play test school 2",
+      "number": "999213",
+      "classes": [
+        {
+          "id": "27f4f130-9658-408c-9715-1ccbc32f74cd",
+          "name": "4B ",
+          "teachers": [
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            }
+          ],
+          "students": [
+            {
+              "id": "92a9ba13-623c-4396-b1b8-a959015922db",
+              "firstName": "Joe",
+              "lastName": "Pilaar"
+            },
+            {
+              "id": "6ee20af7-5dce-42cb-afdf-a99000c3d0c2",
+              "firstName": "Leon",
+              "lastName": "Vandamme"
+            },
+            {
+              "id": "fe72457d-27d3-49b7-bda0-a959015935d1",
+              "firstName": "Stella",
+              "lastName": "Artois"
+            },
+            {
+              "id": "58ef32b2-e4be-47d9-851b-a95b00f378ee",
+              "firstName": "Carl",
+              "lastName": "Verhoest"
+            }
+          ]
+        },
+        {
+          "id": "5f1034d5-fdcc-4cc8-be88-27c1dfe7b057",
+          "name": "2B",
+          "teachers": [
+            {
+              "id": "3c7f6277-da14-4196-a611-abf800753491",
+              "firstName": "Richard",
+              "lastName": "Nagy"
+            },
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            },
+            {
+              "id": "1d32f074-49d3-4a1c-97f5-aaa200bee6d4",
+              "firstName": "Andy",
+              "lastName": "W"
+            },
+            {
+              "id": "609c99d1-e03e-4d1d-b37b-ac6300b0934b",
+              "firstName": "Isabella",
+              "lastName": "O'Reilly"
+            }
+          ],
+          "students": [
+            {
+              "id": "19828905-fcbf-42c3-bbae-a99000c3d064",
+              "firstName": "Finn",
+              "lastName": "Geerts"
+            },
+            {
+              "id": "9c2f5787-0994-42cf-b0a4-a95b00f3d5eb",
+              "firstName": "Malak",
+              "lastName": "Wouters"
+            },
+            {
+              "id": "63846fdf-be33-4bff-a245-a99000c3cc82",
+              "firstName": "Youssef",
+              "lastName": "Brosens"
+            },
+            {
+              "id": "774de09d-b364-4add-8162-a99000c3cdb7",
+              "firstName": "Amélie",
+              "lastName": "Michiels"
+            },
+            {
+              "id": "ca256263-a0eb-4b20-8587-a95b00f3d57f",
+              "firstName": "Yasmine",
+              "lastName": "Claes"
+            },
+            {
+              "id": "cdd8c1f4-99e2-47a9-b3cd-a99000c361db",
+              "firstName": "Steven",
+              "lastName": "Guldentops"
+            },
+            {
+              "id": "a166d87c-3e81-4cde-86ea-a99000c3cd89",
+              "firstName": "Liam",
+              "lastName": "De Smet"
+            },
+            {
+              "id": "fd133ef1-7b01-4323-9c40-a95b00f3d5b3",
+              "firstName": "Elise",
+              "lastName": "Daniëls"
+            },
+            {
+              "id": "dfd3fe31-db31-40fc-a16f-a99000c3ceda",
+              "firstName": "Lowie",
+              "lastName": "Lauwaerts"
+            },
+            {
+              "id": "b98c556a-c3b4-4740-ba50-a99000c3ce15",
+              "firstName": "Mila",
+              "lastName": "Verhoest"
+            },
+            {
+              "id": "8b496aee-5f97-4365-9c26-a95b00f3d61e",
+              "firstName": "Mohamed",
+              "lastName": "De Wachter"
+            },
+            {
+              "id": "e4b5e13c-63ee-44c0-8eff-a99000c36199",
+              "firstName": "Maarten",
+              "lastName": "De Kock"
+            },
+            {
+              "id": "b64dbc7f-c671-44ed-bc4d-a99000c3ccb1",
+              "firstName": "Louis",
+              "lastName": "Lauwers"
+            },
+            {
+              "id": "7875f8f8-6571-4827-b825-a99000c3d195",
+              "firstName": "Victor",
+              "lastName": "Goossens"
+            },
+            {
+              "id": "22443ec7-1b51-4f5d-bad8-a99000c3d1c4",
+              "firstName": "Noor",
+              "lastName": "Jacobs"
+            },
+            {
+              "id": "a321f4ef-75ff-4a85-b57f-a99000c3cf09",
+              "firstName": "Lucas",
+              "lastName": "Uytterhoeven"
+            },
+            {
+              "id": "154d6299-76ca-42c4-b727-a99000c3d093",
+              "firstName": "Sofia",
+              "lastName": "Mertens"
+            },
+            {
+              "id": "734132c3-2a0b-48bf-8ea7-a99000c3cf38",
+              "firstName": "Lucie",
+              "lastName": "Willems"
+            },
+            {
+              "id": "4ce11279-e9bd-4b7c-9d40-a99000c3cea7",
+              "firstName": "Lina",
+              "lastName": "Goossens"
+            },
+            {
+              "id": "ffafa203-bbb4-4543-b4a0-a99000c3cd5e",
+              "firstName": "Gabriel",
+              "lastName": "De Kock"
+            },
+            {
+              "id": "1342dd1b-b6f5-49d7-af1b-a99000c3cfe1",
+              "firstName": "Olivia",
+              "lastName": "Janssens"
+            },
+            {
+              "id": "62f8537c-3c47-4aa4-a749-a99000c3cd0f",
+              "firstName": "Mathis",
+              "lastName": "Van Genechten"
+            },
+            {
+              "id": "580fe572-fc52-4685-95ce-a99000c3cce0",
+              "firstName": "Alice",
+              "lastName": "Maes"
+            },
+            {
+              "id": "04acebb8-45d4-4702-8267-a99000c3d226",
+              "firstName": "Louise",
+              "lastName": "Van Eynde"
+            },
+            {
+              "id": "4cfbaa42-02d2-4a3b-af60-a99000c3cfb2",
+              "firstName": "Lewis",
+              "lastName": "Guldentops"
+            },
+            {
+              "id": "eae05db6-dd8f-46e6-ab5b-a99000c3cdeb",
+              "firstName": "Lars",
+              "lastName": "Van Looy"
+            }
+          ]
+        },
+        {
+          "id": "6486e4a8-a8d5-402d-b410-2ba1ee458bd8",
+          "name": "3B",
+          "teachers": [
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            },
+            {
+              "id": "609c99d1-e03e-4d1d-b37b-ac6300b0934b",
+              "firstName": "Isabella",
+              "lastName": "O'Reilly"
+            }
+          ],
+          "students": [
+            {
+              "id": "34c103ea-23f6-44e1-9a7e-a99000c3d1f7",
+              "firstName": "Emma",
+              "lastName": "Peeters"
+            }
+          ]
+        },
+        {
+          "id": "4db9be20-7152-4ad7-aa75-7e3f276440b4",
+          "name": "5B",
+          "teachers": [
+            {
+              "id": "fd5efc66-c709-4f73-a918-aa6900e46b2e",
+              "firstName": "Lukas",
+              "lastName": "Verstraete"
+            },
+            {
+              "id": "1d32f074-49d3-4a1c-97f5-aaa200bee6d4",
+              "firstName": "Andy",
+              "lastName": "W"
+            }
+          ],
+          "students": [
+            {
+              "id": "db219c2f-c662-47d1-a6e2-accc00d53ea1",
+              "firstName": "Jozef",
+              "lastName": "Demeester"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "schoolyear": "2020-21"
+}

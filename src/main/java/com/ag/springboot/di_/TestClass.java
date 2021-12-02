@@ -1,8 +1,9 @@
-package com.ag.guice_.basicdi;
+package com.ag.springboot.di_;
 
-import com.google.inject.Inject;
+import org.springframework.stereotype.Component;
 
-public class TestClass1 {
+@Component
+public class TestClass {
 	String name;
 
 	public void print() {

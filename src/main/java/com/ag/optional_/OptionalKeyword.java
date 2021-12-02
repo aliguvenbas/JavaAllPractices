@@ -126,7 +126,7 @@ public class OptionalKeyword {
 		String result = Optional.ofNullable(name)
 				.map(stringAppender::getAppended)
 				.orElseThrow(() -> {
-					System.out.println("OrElseGet");
+					System.out.println("OrElseThrow");
 					System.out.println("called");
 					return new IllegalStateException("exception thrown");
 				});

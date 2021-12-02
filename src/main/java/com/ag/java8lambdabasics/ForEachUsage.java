@@ -1,12 +1,15 @@
 package com.ag.java8lambdabasics;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class ForEachUsage {
 
 	public static void main(String[] args) {
-		List<FootballPlayer> players = Arrays.asList(new FootballPlayer("Cristiano Ronaldo", "Juventus", 30), new FootballPlayer("Luka Modric", "Real Madrid", 33), new FootballPlayer("Cengiz Ünder", "Roma", 21), new FootballPlayer("Marcelo Vieira", "Real Madrid", 30));
+		List<FootballPlayer> players = Arrays.asList(new FootballPlayer("Cristiano Ronaldo", "Juventus", 30), new FootballPlayer("Luka Modric", "Real Madrid", 33), new FootballPlayer("Cengiz ï¿½nder", "Roma", 21), new FootballPlayer("Marcelo Vieira", "Real Madrid", 30));
 
 		// for loop
 		System.out.println("for loop");
