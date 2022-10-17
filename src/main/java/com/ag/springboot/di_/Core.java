@@ -10,10 +10,14 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class Core {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(Core.class, args);
-		TestClass bean1 = context.getBean(TestClass.class);
-		TestClass bean2 = context.getBean(TestClass.class);
 
-		bean1.print();
-		bean2.print();
+//		TestClass bean1 = context.getBean(TestClass.class);
+//		TestClass bean2 = context.getBean(TestClass.class);
+//
+//		bean1.print();
+//		bean2.print();
+
+		MyService myService = context.getBean(MyService.class);
+		myService.print();
 	}
 }

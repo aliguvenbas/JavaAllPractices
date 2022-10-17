@@ -6,8 +6,8 @@ public class Core {
 //		1-FinalClassWithStaticFields.values = Arrays.asList("blabla");//this is not correct, because 'values' is final
 
 		//1-this breaks the immutability of 'static final'.We can add new values.
-//		FinalClassWithStaticFields.values.add("first bla");
-//		FinalClassWithStaticFields.values.forEach(System.out::println);
+		FinalClassProtectImmutability.values2.add("first bla");
+		FinalClassProtectImmutability.values2.forEach(System.out::println);
 
 		//2, protect immutability is done
 		FinalClassProtectImmutability.values.add("second bla");
