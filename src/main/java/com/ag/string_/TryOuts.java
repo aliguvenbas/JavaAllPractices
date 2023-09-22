@@ -1,11 +1,12 @@
 package com.ag.string_;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertSame;
-import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
+import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertSame;
+import static junit.framework.Assert.assertTrue;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class TryOuts {
 
@@ -18,12 +19,14 @@ public class TryOuts {
 		assertFalse(str1.equals(str2));
 	}
 
-	@Test(expected = NullPointerException.class)
+	@Test
 	public void shouldCheckEqualityIfFirstParameterNull() {
 		String str1 = "test";
 		String str2 = null;
 
-		assertFalse(str2.equals(str1));
+		Assertions.assertThrows(NullPointerException.class, () -> {
+			str2.equals(str1);
+		});
 	}
 
 	@Test
