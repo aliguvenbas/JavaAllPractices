@@ -28,6 +28,20 @@ public class Core {
 	}
 
 	@Test
+	public void shouldOverrideTheExistingKey(){
+		map.put("a","test");
+
+		assertEquals("test", map.get("a"));
+	}
+
+	@Test
+	public void shouldNotOverrideTheExistingKey(){
+		map.putIfAbsent("a","test");
+
+		assertEquals("ankara", map.get("a"));
+	}
+
+	@Test
 	public void shouldThrowExceptionWhenTryToCreateMapWithSameKey() {
 		assertThrows(IllegalStateException.class, () -> stream.collect(Collectors.toMap(
 				city -> city.toCharArray()[0],
