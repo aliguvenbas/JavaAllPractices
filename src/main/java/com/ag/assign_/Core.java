@@ -3,6 +3,7 @@ package com.ag.assign_;
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotSame;
 
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Test;
@@ -55,25 +56,6 @@ public class Core {
 
 		list.forEach(System.out::println);
 
-		// System.out.println("a:" + a + "-c:" + c + "-d:" + d);
-
-
-
-
-
-
-
-
-
-//		ArrayList list = new ArrayList();
-//		list.add(a);
-//		list.add(c);
-//		list.add(d);
-
-		a = 4;
-
-//		list.forEach(System.out::println);
-
 //		assertEquals(4, a.intValue());
 //		assertEquals(3, c.intValue());
 //		assertEquals(3, d.intValue());
@@ -112,5 +94,18 @@ public class Core {
 //				hashCode = 31*hashCode + (e==null ? 0 : e.hashCode());
 //			return hashCode;
 //		}
+	}
+
+	@Test
+	public void shouldReturnDifferentHashCodesEvenIfSameStaticReturn(){
+		DateTimeFormatter formatter1 = DateTimeFormatter.ofPattern("yyyyMMdd");
+		DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyyMMdd");
+
+		assertNotSame(formatter1.hashCode(), formatter2.hashCode());
+	}
+
+	@Test
+	public void shouldReturnSameHashCodesFromStaticContext(){
+		assertNotSame(DateTimeFormatter.ofPattern("yyyyMMdd").hashCode(), DateTimeFormatter.ofPattern("yyyyMMdd").hashCode());
 	}
 }
