@@ -2,6 +2,7 @@ package com.ag.collections_.list_;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotSame;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,5 +39,11 @@ public class TryOuts {
 		**/
 		assertNotSame(hashCodeA, hashCodeB);
 		assertEquals(hashCodeOfFirstElementA, hashCodeOfFirstElementB);
+	}
+
+	@Test
+	public void shouldThrowNPEIfTheElementIsNullThatIWillAddToListOf(){
+		String text = null;
+		assertThrows(NullPointerException.class, ()-> List.of(text));
 	}
 }
